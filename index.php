@@ -20,8 +20,18 @@ $root = new Usuario();
 
 
 // Carrega um usuario usando login e senha
+//$usuario = new Usuario();
+//$usuario->login("user", "12345");
+//echo $usuario;
+
+// Criando um novo usuário
+//$aluno = new Usuario("aluno","@lun0");
+//$aluno->insert();
+//echo $aluno;
+
 $usuario = new Usuario();
-$usuario->login("user", "12345");
+$usuario->loadbyId(5);
+$usuario->update("professor","54321");
 
 echo $usuario;
  ?>

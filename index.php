@@ -29,9 +29,14 @@ $root = new Usuario();
 //$aluno->insert();
 //echo $aluno;
 
-$usuario = new Usuario();
-$usuario->loadbyId(5);
-$usuario->update("professor","54321");
+// alterar um usuários
+//$usuario = new Usuario();
+//$usuario->loadbyId(5);
+//$usuario->update("professor","54321");
+//echo $usuario;
 
+$usuario = new Usuario();
+$usuario->loadbyId(3);
+$usuario->delete();
 echo $usuario;
  ?>
